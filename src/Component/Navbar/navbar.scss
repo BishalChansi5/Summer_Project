@@ -20,7 +20,7 @@
     width: 100%;
     padding: 1rem;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+    box-shadow: 0 2px 4px rgba(2, 29, 16, 0.852);
 
     .logo{
         color: var(--blackColor);
@@ -46,6 +46,7 @@
             border-radius: 1rem;
             top: -500rem;
             left: 50%;
+            padding: 1rem;
             transform: translate(-50%);
             z-index: 2000;
             box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
