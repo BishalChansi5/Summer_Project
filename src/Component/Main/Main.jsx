@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './main.scss'
 import img from '../../images/img(1).jpg'
 import img2 from '../../images/img(2).png'
@@ -10,6 +10,8 @@ import img7 from '../../images/img(7).jpeg'
 import img8 from '../../images/img(8).jpg'
 import img9 from '../../images/img(9).jpg'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Data =[
     {
@@ -96,17 +98,20 @@ const Data =[
     },
 ]
 const Main = () => {
+    useEffect(()=>{
+        AOS.init({duration:2000})
+  },[])
   return (
     <section className='main container section'>
         <div className="secTitle">
-            <h3 className="title">
+            <h3 data-aos="fade-right" className="title">
                 Most sold items
             </h3>
         </div>
         <div className="secContent grid">{
             Data.map(({id, imgSrc, foodTitle, price,grade,ingredient})=>{
                 return(
-                     <div key={id} className="singleitem">
+                     <div key={id} data-aos="fade-up" className="singleitem">
                         <div className="imageDiv">
                            <img src={imgSrc} alt={foodTitle}/>
                         </div>
