@@ -8,6 +8,7 @@ import {FaList} from 'react-icons/fa'
 import {AiOutlineAppstore} from 'react-icons/ai'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Navbar from '../Navbar/Navbar'
 
  const Home = () => {
 useEffect(()=>{
@@ -15,6 +16,8 @@ useEffect(()=>{
 },[])
 
   return (
+    <>
+    <Navbar/>
     <section className='home'>
       <div className='overlay'></div>
       <video src={video} muted autoPlay loop type="video/mp4"></video>
@@ -30,7 +33,7 @@ useEffect(()=>{
       
       <div data-aos="fade-up" className="cardDiv grid">
         <div className="destinationInput">
-        <label htmlFor='food'>Search</label>
+        <label htmlFor='food'>Search for products and categories</label>
         <div className="input flex">
           <input type='text' placeholder='Enter items here...'/>
           <MdFastfood className="icon"/>
@@ -52,6 +55,7 @@ useEffect(()=>{
       </div>
     </div>
     </section>
+    </>
   )
 }
 export default Home

@@ -41,7 +41,8 @@ const Footer = () => {
                         </a>
                     </div>
                     <div data-aos="fade-up" className="footerparagraph">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium at illo deleniti delectus vero nostrum odio. Velit voluptatem modi dolore! Animi, iusto! Fugit dolorem tenetur ea provident vitae quas.
+                    We highly value your feedback. See what our clients are saying about us.
+                    Client success is always a priority for us. We strive to deliver high-quality solutions that are tailored specifically to our clients’ needs and helped them achieve their goals.
                     </div>
                     <div data-aos="fade-up" className="footerSocials flex">
                         <AiOutlineTwitter className='icon'/>
